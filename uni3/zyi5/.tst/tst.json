@@ -1,0 +1,14 @@
+{
+  "files": {
+    "quality_control.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Controle de Qualidade\n\npeso_congelado = float(raw_input())\npeso_descongelado = float(raw_input())\n\npeso_agua = peso_congelado - peso_descongelado \nporcentagem = (peso_agua / peso_congelado) * 100\n\nprint \"%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.\" %porcentagem\nif porcentagem < 5:\n\tprint \"Produto qualis A.\"\nelif porcentagem < 10:\n\tprint \"Produto em conformidade.\"\nelse:\n\tprint \"Produto n\u00e3o conforme.\"\n",
+      "name": "quality_control.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0bb93060cc73101c8838ae5b83f3583f",
+  "iid": 6103076947623936,
+  "activity_revision": "1.0.1"
+}

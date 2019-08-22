@@ -1,0 +1,14 @@
+{
+  "files": {
+    "callCenter.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\ndia1 = int(input())\ndia2 = int(input())\ndia3 = int(input())\ndia4 = int(input())\ndia5 = int(input())\ndia6 = int(input())\ndia7 = int(input())\n\ntotal = dia1 + dia2 + dia3 + dia4 + dia5 + dia6 + dia7\nmedia = total / 7.0\n\nprint (\"Total: %d\" %total)\nprint (\"M\u00e9dia: %.2f\" %media)\n",
+      "name": "callCenter.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a07a7f6cc38d89b08f2c2a476484f32f",
+  "iid": 6346713329565696,
+  "activity_revision": "1.0.3"
+}

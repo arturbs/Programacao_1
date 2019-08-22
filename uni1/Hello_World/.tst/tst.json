@@ -1,0 +1,14 @@
+{
+  "files": {
+    "hellow.py": {
+      "category": "answer",
+      "data": "print (\"Hello World!\")\n",
+      "name": "hellow.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5f14f5fe1f66b3b7568e3cb1078869a0",
+  "iid": 5045617948622848,
+  "activity_revision": "1.1.0"
+}

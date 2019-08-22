@@ -1,0 +1,14 @@
+{
+  "files": {
+    "absoluto.py": {
+      "category": "answer",
+      "data": "import math\n\nx = int(input())\nx = math.fabs(x)\n\n\nprint (int(x))\n",
+      "name": "absoluto.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "74a00e1e4bdac7aeac86e45cdfe1e48f",
+  "iid": 5831065394479104,
+  "activity_revision": "1.0.0"
+}

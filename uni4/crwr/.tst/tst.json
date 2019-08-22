@@ -1,0 +1,18 @@
+{
+  "files": {
+    "black_box.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Caixa Preta\n\n\"\"\"usuario coloca quantos ciclos de medi\u00e7\u00f5es o programa dever\u00e1 ler\"\"\"\nmedicoes = int(raw_input())\nmed_validas = 0\nmensagem = 0\n\nfor n in range(medicoes):\n\tdados = raw_input()\n\tdados.split()\n\tpeso,combustivel,altitude = dados.split()\n\tif int(peso) < 0 and mensagem == 0:\n\t\tprint \"dado inconsistente. peso negativo.\"\n\t\tmensagem += 1\n\telif mensagem == 0:\n\t\tmed_validas += 1\n\tif int(combustivel) < 0 and mensagem == 0:\n\t\tprint \"dado inconsistente. combust\u00edvel negativo.\"\n\t\tmensagem += 1\n\telif mensagem ==0:\n\t\tmed_validas += 1\n\tif int(altitude) < 0 and mensagem == 0:\n\t\tprint \"dado inconsistente. altitude negativa.\"\n\t\tmensagem += 1\n\telif mensagem == 0:\n\t\tmed_validas += 1\n\nprint \"%d dados v\u00e1lidos.\" %med_validas\n\t\t\n\n",
+      "name": "black_box.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 117.21,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a2b79d508398ebcc2ddcd32f0dcd862a",
+  "iid": 5234930309136384,
+  "activity_revision": "1.1.0"
+}

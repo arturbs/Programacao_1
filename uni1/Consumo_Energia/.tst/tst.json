@@ -1,0 +1,14 @@
+{
+  "files": {
+    "consumoenergia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Calculando o consumo de energia em Joules\n\npotencia = float(input())\ntempo = float(input())\n\nseg = tempo * 60            # convers\u00e3o para segundos\nconsumoj = seg * potencia\nconsumokwh = consumoj/(1000*3600)\n\nprint str(consumokwh) + \" kWh\"    # resultado em Joules\n",
+      "name": "consumoenergia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b0da93c2584d5ff78b10270c4657e82d",
+  "iid": 5012580422647808,
+  "activity_revision": "1.0.0"
+}

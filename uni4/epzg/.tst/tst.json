@@ -1,0 +1,18 @@
+{
+  "files": {
+    "aprovados_reprovados.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 - 17/09/2018\n#Aprovados e Reprovados\n\nalunos = int(raw_input())\naprovados = 0\nreprovados = 0\nalunos_aprovados = 0\nalunos_reprovados = 0\nn = 0\n\nfor n in range(0,alunos):\n\tnota = float(raw_input())\n\tif nota >= 7.0:\n\t\taprovados += nota\n\t\talunos_aprovados += 1\n\telse:\n\t\treprovados += nota\n\t\talunos_reprovados += 1\n\nprint \"Reprovados: %d\" %alunos_reprovados\nif alunos_reprovados > 0:\n\tmedia_reprovados = reprovados / alunos_reprovados\n\tprint \"M\u00e9dia: %.1f\" %media_reprovados\n\nprint \"\"\n\nprint \"Aprovados: %d\" %alunos_aprovados\nif alunos_aprovados > 0:\n\tmedia_aprovados = aprovados / alunos_aprovados\n\tprint \"M\u00e9dia: %.1f\" %media_aprovados\n\t\t\n",
+      "name": "aprovados_reprovados.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 165.67,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "46d1cc211ed382326c34b39aa97a83f4",
+  "iid": 6207600211263488,
+  "activity_revision": "1.0.2"
+}

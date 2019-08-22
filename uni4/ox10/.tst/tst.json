@@ -1,0 +1,18 @@
+{
+  "files": {
+    "letras.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Classifica Letra como Vogal ou Consoante\n\npalavra = raw_input()\n\nfor n in range(len(palavra)):\n\tif palavra[n] == \"a\" or palavra[n] == \"e\" or palavra[n] == \"i\" or palavra[n] == \"o\" or palavra[n] == \"u\":\n\t\tprint \"<%s> sim\" %palavra[n]\n\telif palavra[n] == \"A\" or palavra[n] == \"E\" or palavra[n] == \"I\" or palavra[n] == \"O\" or palavra[n] == \"U\":\n\t\tprint \"<%s> sim\" %palavra[n]\n\telse:\n\t\tprint \"<%s> nao\" %palavra[n]\n\n\n\"\"\"if palavra[n] == (\"a\" or \"A\") or palavra[n] == (\"e\" or \"E\") or palavra[n] == (\"i\" or \"I\") or palavra[n] == (\"o\" or \"O\") or palavra[n] == (\"u\" or \"U\"):\"\"\"\n",
+      "name": "letras.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "038037fa4a28af7b97b0b1d6b323380e",
+  "iid": 5910394581286912,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nchar_unico = getattr(undertest, 'char_unico', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert char_unico(\"aa***xxxzzb+++\") == \"b\"\n\n   def test_string_vazia(self):\n       assert char_unico(\"kkkkrrrrgppp\") == \"g\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "char_unico.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#A Primeira Letra em Caixa Alta\n\ndef char_unico(string):\n\tfor n in range(len(string)):\n\t\tcontador = 0\n\t\tfor i in range(len(string)):\n\t\t\tif string[n] == string[i]:\n\t\t\t\tcontador += 1\n\t\tif contador == 1:\n\t\t\treturn string[n]\n\n\n",
+      "name": "char_unico.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ae329f497ec831bbc7d1f1975e3d6054",
+  "iid": 5594883901358080,
+  "activity_revision": "1.0.0"
+}

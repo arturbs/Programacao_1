@@ -1,0 +1,14 @@
+{
+  "files": {
+    "nome3.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 10/09/2018 \n\nnome = raw_input()\n\nprint nome\nprint nome\nprint nome\n",
+      "name": "nome3.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c96420a21fe2acbd21110f9cc3dea102",
+  "iid": 5710165084995584,
+  "activity_revision": "1.2.0"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "acirculo.py": {
+      "category": "answer",
+      "data": "import math\n\nr = float(input())\nareac = math.pi * (r*r)\n\nprint (\"%.2f\" %areac)\n\n",
+      "name": "acirculo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "defc6256b64e55bc0fbe34030a141762",
+  "iid": 5253717066514432,
+  "activity_revision": "1.1.3"
+}

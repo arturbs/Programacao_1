@@ -1,0 +1,14 @@
+{
+  "files": {
+    "new_cpf.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 12/09/2018 \n# Programa :  novo CPF\n\n\"\"\"recebimento da  vari\u00e1vel\"\"\"\nparte1 = raw_input()\nparte2 = raw_input()\nparte3 = raw_input()\n\n\"\"\"calculo da parte 4 do CPF\"\"\"\nparte4 = (int(parte3[0]) + int(parte3[1]) + int(parte3[2]))\n\nprint (\"%s.%s.%s-%.2d\" %(parte1, parte2, parte3, int(parte4)))\n",
+      "name": "new_cpf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9f15f65fc355bd1535594d0dcb8c1d76",
+  "iid": 4533725694001152,
+  "activity_revision": "1.0.0"
+}

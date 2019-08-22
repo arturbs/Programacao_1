@@ -1,0 +1,14 @@
+{
+  "files": {
+    "conta_inversa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Conta caracteres inversa\n\npalavra = raw_input()\npalavra_inversa = \"\"\ncontador = 0\n\nfor n in range(len(palavra)-1,-1,-1):\n\tinversa = palavra[n]\n\tpalavra_inversa += inversa\n\t\nfor n in range(len(palavra)):\n\tif palavra[n] == palavra_inversa[n]:\n\t\tcontador += 1\n\nprint \"A palavra %s cont\u00e9m %d caractere(s) coincidente(s) com a sua inversa.\" %(palavra, contador)\n",
+      "name": "conta_inversa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7e0c67d5796df3c94315205b6122d592",
+  "iid": 6151721344565248,
+  "activity_revision": "1.1.1"
+}

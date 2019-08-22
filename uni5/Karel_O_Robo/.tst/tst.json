@@ -1,0 +1,18 @@
+{
+  "files": {
+    "karel.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progama\u00e7\u00e3o 1, 2018.2\n#Karel, o Rob\u00f4\n\nposicao_x = 0\nposicao_y = 0\n\nquantidade = 0\ndirecao = \"\"\n\n\nwhile quantidade  != '0':\n\tcomando = raw_input()\n\tcomando.split()\n\tdirecao, quantidade = comando.split()\n\tif quantidade == \"0\":\n\t\tprint \"Fim de jogo\"\n\tif direcao == \"c\" or direcao == \"C\":\n\t\tposicao_y += int(quantidade)\n\telif direcao == \"b\" or direcao == \"B\":\n\t\tposicao_y -= int(quantidade)\n\telif direcao == \"e\" or direcao == \"E\":\n\t\tposicao_x -= int(quantidade)\n\telif direcao == \"d\" or direcao == \"D\":\n\t\tposicao_x += int(quantidade)\n\tif abs(posicao_y) == abs(posicao_x) * 2 and posicao_x != 0:\n\t\tprint \"Parab\u00e9ns, conquista do portal (%d, %d)\" %(posicao_x, posicao_y)\n\t\tbreak\n\t\t\n",
+      "name": "karel.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89d0ff2146db3d1eb1bb8923da046d8d",
+  "iid": 5841100686229504,
+  "activity_revision": "1.0.1"
+}

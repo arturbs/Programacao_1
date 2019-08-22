@@ -1,0 +1,14 @@
+{
+  "files": {
+    "notafis.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nvalor_total = float(raw_input())\ndata = raw_input()\nquantidade_de_produtos = float(raw_input())\n\nmedia = (valor_total / quantidade_de_produtos)\nprint ('Data: %s' % data)\nprint ('O valor total da compra foi de R$ %.2f. A m\u00e9dia do pre\u00e7o dos produtos \u00e9 de %.1f.' %(valor_total, media))\n\n",
+      "name": "notafis.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "88e5cc863cc1fa05d56607fd4472aa0e",
+  "iid": 6442641860329472,
+  "activity_revision": "1.1.1"
+}

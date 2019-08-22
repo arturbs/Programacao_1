@@ -1,0 +1,14 @@
+{
+  "files": {
+    "medmag.py": {
+      "category": "answer",
+      "data": "a = int(input())\nb = int(input())\nc = int(input())\n\nmagica = (a + b + c) / 3.0\n\nprint (\"%.3f\" %magica)\n",
+      "name": "medmag.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4586ce77f454a4e989d02c8ffb9de74b",
+  "iid": 5251725174767616,
+  "activity_revision": "1.1.1"
+}

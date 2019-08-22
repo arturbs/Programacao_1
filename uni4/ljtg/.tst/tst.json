@@ -1,0 +1,14 @@
+{
+  "files": {
+    "desvio_padrao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Desvio Padr\u00e3o\nimport math\n\n\t\t\t\n\nsequencia1 = raw_input()\nsequencia2 = raw_input()\nnumero1 = \"\"\nnumero2 = \"\"\nsoma1 = 0\nsoma2 = 0\nelevado1 = 0\nelevado2 = 0\ncontador1 = 0\ncontador2 = 0\ndiferenca1 = 0\ndiferenca2 = 0\ndesvio1 = 0\ndesvio2 = 0\n\n\"\"\"o split ira separar os numero que o usuario colocar\"\"\"\n\"\"\"soma1 ira somar todos numeros para poder ser feita a media\"\"\"\n\nfor n in range(len(sequencia1.split())):\n\tsoma1 += float(sequencia1.split()[n])\n\tcontador1 += 1\nif contador1 > 0:\n\tmedia1 = soma1 / contador1\n\nfor n in range(len(sequencia1.split())):\n\tdiferenca1 = float(sequencia1.split()[n]) - media1 \n\televado1 += diferenca1 ** 2\n\nif contador1 > 0:\n\tdesvio1 = float(elevado1) / (contador1 - 1)\ndesvio1 = math.sqrt(desvio1)\n\n\nfor n in range(len(sequencia2.split())):\n\tsoma2 += float(sequencia2.split()[n])\n\tcontador2 += 1\nif contador2 > 0:\n\tmedia2 = soma2 / contador2\n\nfor n in range(len(sequencia2.split())):\n\tdiferenca2 = float(sequencia2.split()[n]) - media2 \n\televado2 += diferenca2 ** 2\n\nif contador2 > 0:\t\n\tdesvio2 = float(elevado2) / (contador2 - 1)\ndesvio2 = math.sqrt(desvio2)\n\n\n\nif desvio2 > desvio1:\n\tprint \"A sequ\u00eancia 2 possui o maior desvio padr\u00e3o (%.2f).\" %desvio2\nelif desvio1 > desvio2:\n\tprint \"A sequ\u00eancia 1 possui o maior desvio padr\u00e3o (%.2f).\" %desvio1\nelif desvio1 == desvio2:\n\tprint \"As sequ\u00eancias possuem o mesmo desvio padr\u00e3o (%.2f).\" %desvio2\n\n",
+      "name": "desvio_padrao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e583159eff2f0164a8027c4b98a2309e",
+  "iid": 5623885366034432,
+  "activity_revision": "1.0.3"
+}

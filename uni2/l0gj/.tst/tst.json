@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mediaDoAluno.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 10/09/2018 \n# Programa : media do aluno\n\n\"\"\"dados das notas que o usu\u00e1rio coloca\"\"\"\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\n\n\"\"\"calculo da nota final de acordo com o c\u00e1lculo pedido\"\"\"\nnotaFinal = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10\n\n\"\"\"print da nota final\"\"\"\nprint notaFinal\n",
+      "name": "mediaDoAluno.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "57c914e7818e4a6490ea78bdcad4ec2a",
+  "iid": 6366094973468672,
+  "activity_revision": "1.1.1"
+}

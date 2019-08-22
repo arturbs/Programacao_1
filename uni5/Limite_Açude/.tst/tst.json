@@ -1,0 +1,14 @@
+{
+  "files": {
+    "limite_acude.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progama\u00e7\u00e3o 1, 2018.2\n#Limite a\u00e7ude\n\nlimite_superior = float(raw_input())\nnivel_atual = float(raw_input())\n\nwhile nivel_atual < limite_superior:\n\teventos = raw_input()\n\teventos.split()\n\ttipo, quantidade = eventos.split()\n\tif tipo == \"chuva\":\n\t\tnivel_atual += float(quantidade)\n\telif tipo == \"afluente\":\n\t\tnivel_atual += float(quantidade)\n\telif tipo == \"demanda\":\n\t\tif nivel_atual - float(quantidade) < 0:\n\t\t\tnivel_atual = nivel_atual\n\t\telif nivel_atual - float(quantidade) >= 0:\n\t\t\tnivel_atual -= float(quantidade)\n\t\t\t\nprint \"A\u00e7ude passou a liberar \u00e1gua.\"\nprint \"N\u00edvel: %.2f\" %nivel_atual\n\n",
+      "name": "limite_acude.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "11850c200ee55bd372a66e8cbe0354ff",
+  "iid": 6352826443759616,
+  "activity_revision": "1.0.1"
+}

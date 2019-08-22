@@ -1,0 +1,14 @@
+{
+  "files": {
+    "convtemp.py": {
+      "category": "answer",
+      "data": "fahr = float(input())\n\ncels = (fahr - 32) * (5.0/9)\nkel = cels + 273.15\n\nprint (\"Fahrenheit: %0.3f F\" %fahr)\nprint (\"Celsius: %0.3f C\" %cels)\nprint (\"Kelvin: %0.3f K\" %kel)\n",
+      "name": "convtemp.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "86078fbd3aaefa88afde65a34c49098a",
+  "iid": 4995232412205056,
+  "activity_revision": "1.1.2"
+}

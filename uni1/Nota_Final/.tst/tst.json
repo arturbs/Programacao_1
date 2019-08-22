@@ -1,0 +1,14 @@
+{
+  "files": {
+    "notafinal.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nmedia_p = float(input())\nnota_da_final = float(input())\n\nmedia_f = ((media_p * 6) + (nota_da_final * 4)) / 10\n\nprint (\"M\u00e9dia final: %.1f\" %media_f)\n",
+      "name": "notafinal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "966b760a2aace135f526bab35ba58b26",
+  "iid": 6469486748106752,
+  "activity_revision": "1.0.1"
+}

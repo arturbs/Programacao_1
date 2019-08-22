@@ -1,0 +1,18 @@
+{
+  "files": {
+    "votacao.py": {
+      "category": "public",
+      "data": "# coding: utf-8\n# Elei\u00e7\u00e3o na ADUF\n\nabstencao = int(raw_input())\na_favor = int(raw_input())\ncontra = int(raw_input())\n\nprint \"Resultado da Vota\u00e7\u00e3o\"\nprint\nprint abstencao, \"absten\u00e7\u00f5es\"\nprint a_favor, \"a favor\"\nprint contra, \"contra\"\n"
+    },
+    "assembleia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Elei\u00e7\u00e3o na ADUF\n\nabstencao = float(raw_input())\na_favor = float(raw_input())\ncontra = float(raw_input())\ntotal = abstencao + a_favor + contra\n\nporc_abst = (abstencao / total) * 100\nporc_afav = (a_favor / total) * 100\nporc_cont = (contra / total) * 100\n\nprint \"Resultado da Vota\u00e7\u00e3o\"\nprint\nprint (\"%d absten\u00e7\u00f5es (%.2f%%)\" %(abstencao, porc_abst))\nprint (\"%d a favor (%.2f%%)\" %(a_favor, porc_afav))  \nprint (\"%d contra (%.2f%%)\" %(contra, porc_cont))  \n",
+      "name": "assembleia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "299cc436ba38870656fe807943bc22f1",
+  "iid": 6152963261202432,
+  "activity_revision": "1.0.0"
+}

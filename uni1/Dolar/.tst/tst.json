@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dolar.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nreal = float(raw_input(\"Reais? \")) \ncotacao = float(raw_input(\"Cota\u00e7\u00e3o? \"))\n\nconversao = real * cotacao\n\nprint(\"Convers\u00e3o: $ \" + str(conversao))\n\n",
+      "name": "dolar.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "28a01e0b0710180612628db1c9bcb33f",
+  "iid": 5910486587539456,
+  "activity_revision": "1.0.1"
+}

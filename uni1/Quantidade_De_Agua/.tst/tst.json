@@ -1,0 +1,14 @@
+{
+  "files": {
+    "contragua.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nimport math\n\nvelocidade_de_vazao = float(input())\ndiametro_cano = float(input())\nseccao = (math.pi * diametro_cano**2) / 4\nvazao = velocidade_de_vazao * seccao * 1000            #convertendo para litros\ntempo = int(input())                                   #em segundos\nquantidade_de_agua = tempo * vazao\nprint \"Quantidade de \u00e1gua =\", quantidade_de_agua, \"litros.\"\n",
+      "name": "contragua.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6834d74b038ca0804bac3ad9268d026b",
+  "iid": 6082980392992768,
+  "activity_revision": "1.0.1"
+}

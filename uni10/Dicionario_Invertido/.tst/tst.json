@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninverte_dicionario = getattr(undertest, 'inverte_dicionario', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m = {\"a\": 2, \"b\": 3, \"c\": 2}\n        assert inverte_dicionario(m) == {\n          2: [\"a\", \"c\"],\n          3: [\"b\"]\n        }\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "dicionario_invertido.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Inverte Dicion\u00e1rio\n\ndef  inverte_dicionario(dicionario):\n\tdic_inv = {}\n\tfor n in range(len(dicionario)):\n\t\tif dic_inv.has_key(dicionario.values()[n]):\n\t\t\tdic_inv[dicionario.values()[n]].append(dicionario.keys()[n])\n\t\telse:\n\t\t\tdic_inv[dicionario.values()[n]] = [dicionario.keys()[n]]\n\tfor q in dic_inv.values():\n\t\tfor i in range(len(q)):\n\t\t\tfor j in range(len(q)-1):\n\t\t\t\tif q[j] >= q[j+1]:\n\t\t\t\t\tq[j],q[j+1]=q[j+1],q[j]\n\treturn dic_inv\n\nm = {\"a\": 2, \"b\": 3, \"c\": 2}\n\nprint inverte_dicionario(m)\n\n\n\n",
+      "name": "dicionario_invertido.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "49c3ec81be5db70b5ed18c28ffef2e34",
+  "iid": 5906184003387392,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_seguro = getattr(undertest, 'calcula_seguro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto']) == [120, \"Risco Alto\", 600.0]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "calculo_de_seguro.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#A Primeira Letra em Caixa Alta\n\ndef calcula_seguro(valor_veiculo, lista):\n\tidade = lista[0]\n\trelacionamento = lista[1]\n\tmoradia_risco = lista[2]\n\tportao = lista[3]\n\tcasa = lista[4]\n\tcasa_propria = lista[5]\n\tuso = lista[6]\n\tpontos = 0\n\tif idade < 22:\n\t\tpontos += 20\n\telif idade < 31:\n\t\tpontos += 15\n\telif idade < 41:\n\t\tpontos += 12\n\telif idade < 61:\n\t\tpontos += 10\n\telse:\n\t\tpontos += 20\n\t\t\n\tif relacionamento == True:\n\t\tpontos += 10\n\telse:\n\t\tpontos += 20\n\t\t\n\tif moradia_risco == True:\n\t\tpontos += 20\n\telse:\n\t\tpontos += 10\n\t\t\n\tif portao == True:\n\t\tpontos += 20\n\telse:\n\t\tpontos += 10\n\t\t\n\tif casa == True:\n\t\tpontos += 20\n\telse:\n\t\tpontos += 10\n\t\t\n\tif casa_propria == True:\n\t\tpontos += 10\n\telse:\n\t\tpontos += 20\n\t\t\n\tif uso == \"Trabalho\":\n\t\tpontos += 10\n\telse:\n\t\tpontos += 20\n\t\t\n\tif pontos <= 80:\n\t\trisco = \"Risco Baixo\"\n\t\tpago_ao_seguro = (valor_veiculo / 100.0) * 10\n\telif pontos <= 100:\n\t\trisco = \"Risco Medio\"\n\t\tpago_ao_seguro = (valor_veiculo / 100.0) * 20\n\telse:\n\t\trisco = \"Risco Alto\"\n\t\tpago_ao_seguro = (valor_veiculo / 100.0) * 30\n\t\t\n\treturn [pontos, risco, pago_ao_seguro]\n\n\n\n\n\n\n\n\n\n",
+      "name": "calculo_de_seguro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b5d800638e0a7947de79541498b90a29",
+  "iid": 6616176591372288,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "unidades_e_medidas.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 12/09/2018 \n# Programa :  tweets por pagina\n\nmetros = float(raw_input())\n\njardas = metros / 0.9144\npes = jardas * 3\npol = jardas * 36\n\n\nprint (\"Jardas: %.3f yd\" %jardas)\nprint (\"P\u00e9s: %.3f ft\" %pes)\nprint (\"Polegadas: %.3f in\" %pol)\n",
+      "name": "unidades_e_medidas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "73084b56eddeaa70b5e9b755339916e8",
+  "iid": 5533014763241472,
+  "activity_revision": "1.1.0"
+}

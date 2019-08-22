@@ -1,0 +1,14 @@
+{
+  "files": {
+    "divisaoDeSafra.py": {
+      "category": "answer",
+      "data": "safra = float(input())\natacado = int(input())\nvarejo = int(input())\n\npAtacado = safra / atacado\nsobra = safra % atacado\npVarejo = sobra / varejo \n\n\nprint (\"Clientes no atacado = %dkg cada.\" %int(pAtacado)) \nprint (\"Clientes no varejo = %.2fkg cada.\" %pVarejo)\n",
+      "name": "divisaoDeSafra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ea666a0af2f380fd82a3193311dc9374",
+  "iid": 5208291311353856,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "perimetro_triangulos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 12/09/2018 \n# Programa :  perimetro triangulos\nimport math\n\n\"\"\"dados inseridos pelo usuario\"\"\"\nx1 = int(raw_input())\ny1 = int(raw_input())\nx2 = int(raw_input())\ny2 = int(raw_input())\nx3 = int(raw_input())\ny3 = int(raw_input())\n\n\"\"\"calculo dos lados e perimetro\"\"\"\nlado1 = math.sqrt(((x1 - x2) ** 2) + ((y1 - y2)**2))\nlado2 = math.sqrt(((x2 - x3) ** 2) + ((y2 - y3)**2))\nlado3 = math.sqrt(((x3 - x1) ** 2) + ((y3 - y1)**2))\nperimetro = lado1 + lado2 + lado3\n\nprint (\"O per\u00edmetro \u00e9 de %.2f\" %abs(perimetro))\n",
+      "name": "perimetro_triangulos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "579bb2fba58539d5cbb53837a3fff6af",
+  "iid": 6314499095134208,
+  "activity_revision": "1.1.0"
+}

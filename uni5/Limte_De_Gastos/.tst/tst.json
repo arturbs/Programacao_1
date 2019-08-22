@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limite_de_gastos.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progama\u00e7\u00e3o 1, 2018.2\n#Limite de gastos\n\nentrada = 0\ncont = 0\nvalores = []\ntotal = 0\nteste = 0\ntotal_teste = 0\n\nmedia_mensal = float(raw_input())\n\nwhile entrada != \"fim\": #Esse while serve para receber os valores\n\tentrada = raw_input()\n\tif entrada != \"fim\":\n\t\tvalores.append(entrada)\n\t\tcont += 1\n\t\tlinha_teste = valores[cont-1].split(\" \")\n\t\tfor j in range(len(linha_teste)):\n\t\t\tif len(linha_teste[j]) > 0:\n\t\t\t\ttotal_teste += float(linha_teste[j])\n\t\tmedia_teste = total_teste/(j+1)\n\t\ttotal_teste = 0\n\t\tif media_teste <= media_mensal/2:\n\t\t\tentrada = \"fim\"\n\nmedia = range(len(valores))\n\nfor n in range(len(valores)):\t#Esse for calcula a media de cada entrada\n\tlinha = valores[n].split(\" \")\n\tfor i in range(len(linha)):\n\t\ttotal += float(linha[i])\n\tmedia[n] = total/(i+1)\n\ttotal = 0\n\nwhile teste < cont:\n\tif media[teste] > media_mensal:\n\t\tprint valores[teste]\n\tteste += 1\n",
+      "name": "limite_de_gastos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 2,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "365badfffa5c1dd7c4fa466776848683",
+  "iid": 5247014870712320,
+  "activity_revision": "1.0.3"
+}

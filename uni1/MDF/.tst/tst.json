@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mdf.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nnome = raw_input(\"Nome? \")\npletra = raw_input(\"Letra? R$ \")\n\nquantidade = len(nome)\nvfinal = quantidade * float(pletra)\n\nprint (\"Or\u00e7amento: R$ \" + str(vfinal))\n\n",
+      "name": "mdf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "980eb15de0ab07e43fd69d396f4cd227",
+  "iid": 4957080486150144,
+  "activity_revision": "1.0.0"
+}

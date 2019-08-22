@@ -1,0 +1,14 @@
+{
+  "files": {
+    "celfah.py": {
+      "category": "answer",
+      "data": "\ncelsius = float(input())\n\n\nfahrenheit = ((9 * celsius / 5) + 32 )\n\n\nprint fahrenheit\n",
+      "name": "celfah.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8346ec03593023da97005c12ea191bc2",
+  "iid": 6446352477192192,
+  "activity_revision": "1.1.8"
+}

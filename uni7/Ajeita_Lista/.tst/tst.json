@@ -1,0 +1,19 @@
+{
+  "files": {
+    "ajeita_lista.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Ajeita Lista de N\u00fameros Inteiros\n\ndef ajeita_lista(lista):\n\tlista_par = []\n\tlista_impar = []\n\t\n\tfor e in range(len(lista)):\n\t\tif lista[e] % 2 == 0:\n\t\t\tlista_par.append(lista[e])\n\t\telse:\n\t\t\tlista_impar.append(lista[e])\n\t\t\t\n\t\n\tfor n in range(len(lista_par) - 2, -1, -1):\n\t\tatual = len(lista_par) -1\n\t\twhile atual > n:\n\t\t\tif lista_par[n] < lista_par[atual]:\n\t\t\t\tlista_par[atual], lista_par[n] = lista_par[n], lista_par[atual]\n\t\t\tatual -= 1\n\t\t\t\n\tfor m in range(1, len(lista_impar)):\n\t\tatual = 0\n\t\twhile atual < m:\n\t\t\tif lista_impar[m] < lista_impar[atual]:\n\t\t\t\tlista_impar[atual], lista_impar[m] = lista_impar[m], lista_impar[atual]\n\t\t\tatual += 1\n\n\t\n\tlista = lista_par + lista_impar\n\treturn lista\n\t\t\t\t\n\t\t\n\n\n",
+      "name": "ajeita_lista.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\najeita_lista = getattr(undertest, 'ajeita_lista', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_do_enunciado(self):\n       lista1 = [3,2,1,4,5,6,7,8,9]\n       assert ajeita_lista(lista1) == None\n       assert lista1 == [8, 6, 4, 2, 1, 3, 5, 7, 9]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4c4788ea35bb15d1d05dc086c95b4c3d",
+  "iid": 6174737570988032,
+  "activity_revision": "1.0.2"
+}

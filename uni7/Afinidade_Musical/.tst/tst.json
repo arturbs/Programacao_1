@@ -1,0 +1,18 @@
+{
+  "files": {
+    "afinidade_musical.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Conta Alertas do A\u00e7ude\n\n\ndef tem_afinidade(l1, l2):\n\tcont = 0\n\tfor n in range(len(l1)):\n\t\tfor e in range(len(l2)):\n\t\t\tif l1[n] == l2[e]:\n\t\t\t\tcont += 1\n\tif cont >= 3:\n\t\treturn True\n\telse:\n\t\treturn False\n",
+      "name": "afinidade_musical.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ntem_afinidade = getattr(undertest, 'tem_afinidade', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['zeze', 'bruno e marrone', 'joao', 'pedro', 'u2']\n        l2 = ['zeze', 'joao', 'u2', 'jquest']\n        assert tem_afinidade(l1, l2) == True\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "90ea96637c6758864359cbc84e3998e4",
+  "iid": 6416901798363136,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fatorial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Fatorial\n\nnumero = int(raw_input())\nfatorial = 1\n\nfor n in range(numero,1,-1):\n\tfatorial *= n\n\t\nprint fatorial\n",
+      "name": "fatorial.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d6b2bf0809bf37c7871af4160eddecc4",
+  "iid": 5264080587718656,
+  "activity_revision": "1.1.1"
+}

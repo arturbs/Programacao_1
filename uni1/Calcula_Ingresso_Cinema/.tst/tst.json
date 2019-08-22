@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calingcin.py": {
+      "category": "answer",
+      "data": "adultos = int(input())\ncrias = int(input())\ningresso = float(input())\n\ntotal = adultos * ingresso + (crias * ingresso)/2\nprint (\"Total: R$ \" + str(total))\n",
+      "name": "calingcin.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "913de71e127837efdefc39c54dabfedd",
+  "iid": 5247912921530368,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "natal.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 - 17/09/2018\n#Arvore de natal\n\naltura = int(raw_input())\nalt = altura\ncentro = 1\nfor n in range(0,altura):\n\tprint\" \" * (alt - 1) + \"o\" * centro\n\talt -= 1\n\tcentro += 2\nprint \" \" * (altura -1) + \"o\"\n",
+      "name": "natal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a2271ff68824b3a2142e599a4d9b933b",
+  "iid": 5591554664169472,
+  "activity_revision": "1.0.0"
+}

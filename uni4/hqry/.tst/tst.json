@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campanha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# Programa :  Campanha\n\nvitoria = 0\nderrotas = 0\nempates = 0 \npontos = 0\ngols_pro = 0\ngols_adversario = 0\nsaldo = 0\npontos_casa = 0\npontos_fora = 0\n\nfor n in range(10):\n\tpartida = raw_input()\n\tif partida[5] == \"c\":\n\t\tgols_pro += int(partida[0])\n\t\tgols_adversario += int(partida[2])\n\telif partida[5] == \"f\":\n\t\tgols_adversario += int(partida[0])\n\t\tgols_pro += int(partida[2])\n\t\n\tif partida[5] == \"c\" and partida[0] > partida[2]:\n\t\tvitoria += 1\n\t\tpontos += 3\n\t\tpontos_casa += 3 \n\telif partida[5] == \"c\" and partida[0] == partida[2]:\n\t\tempates += 1\n\t\tpontos += 1\n\t\tpontos_casa += 1\n\telif partida[5] == \"c\" and partida[0] < partida[2]:\n\t\tderrotas += 1\n\t\tpontos += 0\n\t\tpontos_casa += 0\n\telif partida[5] == \"f\" and partida[0] < partida[2]:\n\t\tvitoria += 1\n\t\tpontos += 3\n\t\tpontos_fora += 3 \n\telif partida[5] == \"f\" and partida[0] == partida[2]:\n\t\tempates += 1\n\t\tpontos += 1\n\t\tpontos_fora += 1\n\telif partida[5] == \"f\" and partida[0] > partida[2]:\n\t\tderrotas += 1\n\t\tpontos += 0\n\t\tpontos_fora += 0 \n\nsaldo = gols_pro - gols_adversario\n\nprint \"%dv, %de, %dd\" %(vitoria, empates, derrotas)\nprint \"pontos: %d\" %pontos\nprint \"saldo: %d (%d pro, %d contra)\" %(saldo, gols_pro, gols_adversario)\nprint \"pontos em casa: %d\" %pontos_casa\nprint \"pontos fora: %d\" %pontos_fora\n\n",
+      "name": "campanha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "84ce1de6c4357304b0ea026788d6b914",
+  "iid": 5322872213995520,
+  "activity_revision": "1.0.1"
+}

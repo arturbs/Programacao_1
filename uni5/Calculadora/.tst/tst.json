@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 16,\n      \"vhalstead\": 213.67,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "calculdora.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progama\u00e7\u00e3o 1, 2018.2\n#Calculadora\n\ncontrole = 0\n\nwhile controle != 5:\n\tentrada = raw_input()\n\tif entrada ==  \"5\":\n\t\tcontrole = 5\n\telse:\n\t\tentrada.split()\n\t\toperacao,num1, num2 = entrada.split()\n\t\tcontrole = int(operacao)\n\t\n\tdef soma(num1, num2):\n\t\tresultado = int(num1) + int(num2)\n\t\tprint resultado\n\tdef subtracao(num1, num2):\n\t\tresultado = int(num1) - int(num2)\n\t\tprint resultado\n\tdef multiplicacao(num1, num2):\n\t\tresultado = int(num1) * int(num2)\n\t\tprint resultado\n\tdef divisao(num1, num2):\n\t\tif int(num2) ==  0:\n\t\t\tprint \"Erro: Divis\u00e3o por 0\"\n\t\telse:\n\t\t\tresultado = int(num1) / int(num2)\n\t\t\tprint resultado\n\n\tif controle == 1:\n\t\tsoma(num1,num2)\n\telif controle == 2:\n\t\tsubtracao(num1, num2)\n\telif controle == 3:\n\t\tmultiplicacao(num1, num2)\n\telif controle == 4:\n\t\tdivisao(num1, num2)\n\n\n\n",
+      "name": "calculdora.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "952e95bd628c485aa4a6f7666f7fa93d",
+  "iid": 5780419408560128,
+  "activity_revision": "1.0.2"
+}

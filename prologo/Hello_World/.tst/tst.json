@@ -1,0 +1,18 @@
+{
+  "files": {
+    "meuhello.py": {
+      "category": "answer",
+      "data": "print (\"Hello, World!\")\n",
+      "name": "meuhello.py"
+    },
+    "hello.py": {
+      "category": "public",
+      "data": "# Hello, World!\n# (c) 2016, Dalton Serey, UFCG\n\nprint \"Hello, World!\"\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "905661b042736344e8c680f07ada894f",
+  "iid": 5273675880202240,
+  "activity_revision": "1.0.0"
+}

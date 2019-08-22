@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dieta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nqPerder = float(input())\ntExercicios = float(input())\nqCalorias = float(input())\n\ndias = (qPerder * 7700) / (( tExercicios * 900) + (2000 - qCalorias))\n\n\nprint (\"Voc\u00ea precisar\u00e1 de %.2f dias de dieta\" %dias)\n",
+      "name": "dieta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "453d0164afb70705770bf722613f4796",
+  "iid": 4914827503861760,
+  "activity_revision": "1.0.1"
+}

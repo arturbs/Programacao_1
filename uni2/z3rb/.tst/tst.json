@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ritmo_maratonista.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 12/09/2018 \n# Programa :  ritmo de um maratonista\n\npercorrido = float(raw_input())\ntempo = float(raw_input())\n\n\"\"\"calculo\"\"\"\nritmo = tempo / percorrido\n\nprint (\"O ritmo do maratonista foi %.2f min/km.\" %ritmo)\n",
+      "name": "ritmo_maratonista.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4ab4b61a9d1e28a455d9cffda406d57a",
+  "iid": 4970064809820160,
+  "activity_revision": "2.1.4"
+}

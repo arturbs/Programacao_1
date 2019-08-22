@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixo_da_media.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 - 17/09/2018\n#Abaixo da m\u00e9dia\n\nvalor = raw_input()\nlista_de_valores = []\n\nsomatorio = 0\ncontador = 0\nwhile valor != \"fim\":\n\tcontador += 1\n\tsomatorio += float(valor)\n\tlista_de_valores.append(valor)\n\tvalor = raw_input()\n\tif valor == \"fim\":\n\t\tbreak\n\nmedia = float(somatorio / contador)\nprint \"%.2f\" %media\n\nfor variavel in range(len(lista_de_valores)):\n\tif int(lista_de_valores[variavel]) < media:\n\t\tprint \"%d %d\" %((variavel + 1), int(lista_de_valores[variavel]))\n",
+      "name": "abaixo_da_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9fbd6329b46c56675f8cfa51decaed23",
+  "iid": 5535551713181696,
+  "activity_revision": "1.0.1"
+}

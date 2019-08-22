@@ -1,0 +1,14 @@
+{
+  "files": {
+    "molduraquadro.py": {
+      "category": "answer",
+      "data": "comprimento = float(input())\nlargura = float(input())\n\nvalor = ((comprimento * 2 + largura * 2) / 100) * 120\n\nprint (\"R$ \" + str(valor))\n",
+      "name": "molduraquadro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2013d149be6f3e27417bd2acd50342de",
+  "iid": 5317040621486080,
+  "activity_revision": "1.0.4"
+}

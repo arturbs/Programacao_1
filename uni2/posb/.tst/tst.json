@@ -1,0 +1,14 @@
+{
+  "files": {
+    "resumo_vendas.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 12/09/2018 \n# Programa : resumo das vendas\n\nbrinquedos_total = int(raw_input())\nteresa = int(raw_input())\ncarla = int(raw_input())\n\njoaquim = brinquedos_total - teresa - carla\np_teresa = (float(teresa) / brinquedos_total) * 100\np_carla = (float(carla) / brinquedos_total) * 100\np_joaquim = (float(joaquim) / brinquedos_total) * 100\n\nprint (\"Teresa vendeu %d (de %d) brinquedos. (%.2f%%)\" %(teresa, brinquedos_total, p_teresa))\nprint (\"Joaquim vendeu %d (de %d) brinquedos. (%.2f%%)\" %(joaquim, brinquedos_total, p_joaquim))\nprint (\"Carla vendeu %d (de %d) brinquedos. (%.2f%%)\" %(carla, brinquedos_total, p_carla))\n",
+      "name": "resumo_vendas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "415359fb8c187c311ec874a72fb80f95",
+  "iid": 6117594272628736,
+  "activity_revision": "1.0.0"
+}

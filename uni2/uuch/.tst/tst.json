@@ -1,0 +1,14 @@
+{
+  "files": {
+    "verificador5Digitos.py": {
+      "category": "answer",
+      "data": "conta = raw_input()\n\na = conta [0]\nb = conta [1]\nc = conta [2]\nd = conta [3]\ne = conta [4]\n\nverificador = (int(a) + int(b) + int(c) + int(d) + int(e)) % 11\n\nprint (\"%s-%.2d\" %(conta, int(verificador)))\n",
+      "name": "verificador5Digitos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5605e7ca33df7a3a726674c057a2b43a",
+  "iid": 6040727410704384,
+  "activity_revision": "1.1.0"
+}

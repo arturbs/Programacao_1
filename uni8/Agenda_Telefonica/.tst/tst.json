@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda_telefonica.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Agenda Telef\u00f4nica\n\nlista= []\ndef lista_telefonica(operacao):\n\tif operacao == \"inserir\":\n\t\tquantidade = raw_input()\n\t\tfor n in range(int(quantidade)):\n\t\t\tlista.append(raw_input())\n\t\t\tlista.append(raw_input())\n\tfor w in range(0, len(lista) - 2, 2):\n\t\tif lista[w] > lista[w + 2]:\n\t\t\tlista[w], lista[w+2] = lista[w+2], lista[w]\n\t\t\tlista[w+1], lista[w+3] = lista[w+3], lista[w+1]\n\t\t\t\n\t\t\n\t\n\tif operacao == \"buscar\":\n\t\tcontador = 0\n\t\tpalavra_a_buscar = raw_input()\n\t\tfor l in range(0,len(lista),2):\n\t\t\tif str(lista[l]) == str(palavra_a_buscar):\n\t\t\t\tprint \"Nome: %s\" %lista[l]\n\t\t\t\tprint \"Fone: %s\" %lista[(l+1)]\n\t\t\t\tprint \"----------\"\n\t\t\t\tcontador += 1\n\t\tif contador == 0:\n\t\t\tprint \"Nome inexistente\"\n\t\t\tprint \"----------\"   \n\t\n\tif operacao == \"imprimir\":\n\t\tfor q in range(0, len(lista), 2):\n\t\t\tprint \"Nome: %s\" %lista[q]\n\t\t\tprint \"Fone: %s\" %lista[(q+1)]\n\t\t\tprint \"----------\"\n\t\t\t\n\t\t\n\t\t\n\t\t\noperacao = \"\"\nwhile operacao != \"finalizar\":\n\toperacao = raw_input()\n\tlista_telefonica(operacao)\n\n\n",
+      "name": "agenda_telefonica.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "56ff4f0fd982e5391863da2d3136b854",
+  "iid": 5035103365365760,
+  "activity_revision": "1.0.0"
+}

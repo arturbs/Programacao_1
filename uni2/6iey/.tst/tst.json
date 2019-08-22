@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mru_2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 10/09/2018 \n# Programa : outra vers\u00e3o da quest\u00e3o de MRU\n\nposicao_inicial = float(raw_input())\nvelocidade = float(raw_input())\nposicao_tempo_t = float(raw_input())\n\ns0 = posicao_inicial + (velocidade * posicao_tempo_t)\nprint (\"%.2f\" %s0)\n",
+      "name": "mru_2.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "efb4eece37df09b03c95216817b34d01",
+  "iid": 5181181746216960,
+  "activity_revision": "1.1.1"
+}

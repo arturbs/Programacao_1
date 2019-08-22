@@ -1,0 +1,14 @@
+{
+  "files": {
+    "muv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 10/09/2018 \n# Programa :  MRV\n\n\"\"\"DADOS INSERIDOS PELO USU\u00c1RIO\"\"\"\npos_ini = float(raw_input(\"Posi\u00e7\u00e3o inicial? \"))\nvel_ini = float(raw_input(\"Velocidade inicial? \"))\ntempo = float(raw_input(\"Tempo? \"))\nacel = float(raw_input(\"Acelera\u00e7\u00e3o? \"))\n\n\"\"\"calculos do MUV\"\"\"\nvel_fin = vel_ini + (acel * tempo)\npos_fin = pos_ini + (vel_ini * tempo) + ((acel * (tempo * tempo)) / 2)\nvel_media = (pos_fin - pos_ini) / tempo\n\n\"\"\"prints determinados pela quest\u00e3o\"\"\"\nprint (\"\")\nprint (\"Dados da quest\u00e3o\")\nprint (\"================\")\nprint (\"   Posi\u00e7\u00e3o inicial: %.2f m\" %pos_ini)\nprint (\"Velocidade inicial: %.2f m/s\" %vel_ini)\nprint (\"        Acelera\u00e7\u00e3o: %.2f m/s2\" %acel)\nprint (\"             Tempo: %.2f s\" %tempo)\nprint (\"  Velocidade final: %.2f m/s\" %vel_fin)\nprint (\"  Velocidade m\u00e9dia: %.2f m/s\" %vel_media)\nprint (\"     Posi\u00e7\u00e3o final: %.2f m\" %pos_fin)\n",
+      "name": "muv.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6e93bc9ab11d2a230d5939c6f45b39bf",
+  "iid": 6611529000550400,
+  "activity_revision": "1.1.0"
+}

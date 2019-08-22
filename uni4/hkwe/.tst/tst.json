@@ -1,0 +1,18 @@
+{
+  "files": {
+    "cnpq.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 - 17/09/2018\n#Economizando a Bolsa de Estudos\n\nmes = 0\nvalor_mes = 0\nmes_acumulado = 0\n\nfor n in range (12):\n\tgastos = int(raw_input())\n\tvalor_mes += (500 - gastos)\n\tif valor_mes >= mes_acumulado :\n\t\tmes_acumulado = valor_mes\n\t\tmes_com_conta_maior = n + 1\n\t\t\n\t\t\nif mes_com_conta_maior == 1:\n\tprint \"jan\"\nelif mes_com_conta_maior == 2:\n\tprint \"fev\"\nelif mes_com_conta_maior == 3:\n\tprint \"mar\"\nelif mes_com_conta_maior == 4:\n\tprint \"abr\"\nelif mes_com_conta_maior == 5:\n\tprint \"mai\"\nelif mes_com_conta_maior == 6:\n\tprint \"jun\"\nelif mes_com_conta_maior == 7:\n\tprint \"jul\"\nelif mes_com_conta_maior == 8:\n\tprint \"ago\"\nelif mes_com_conta_maior == 9:\n\tprint \"set\"\nelif mes_com_conta_maior == 10:\n\tprint \"out\"\nelif mes_com_conta_maior == 11:\n\tprint \"nov\"\nelif mes_com_conta_maior == 12:\n\tprint \"dez\"\n\t\n\t\n\t\n\t\n\t\n",
+      "name": "cnpq.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"lloc\": 12,\n      \"header\": 3,\n      \"cc\": 4,\n      \"pep8\": 14,\n      \"vhalstead\": 72.0,\n      \"icheckscore\": 1.0\n    }\n  ],\n  \"problem_vocabulary\": [\n    \"sao\",\n    \"consid\",\n    \"sab\",\n    \"ano\",\n    \"consiste\",\n    \"not\",\n    \"inteiros\",\n    \"sendo\",\n    \"long\",\n    \"gastos\",\n    \"computacao\",\n    \"logo\",\n    \"ter\",\n    \"total\",\n    \"estud\",\n    \"out\",\n    \"outubr\",\n    \"apen\",\n    \"curso\",\n    \"dezembro\",\n    \"inicio\",\n    \"simplicidade\",\n    \"mensais\",\n    \"fazer\",\n    \"pagamentos\",\n    \"valor\",\n    \"ped\",\n    \"ufcg\",\n    \"pass\",\n    \"todos\",\n    \"pagar\",\n    \"desse\",\n    \"bast\",\n    \"acumul\",\n    \"receb\",\n    \"janeiro\",\n    \"gostaria\",\n    \"desp\",\n    \"fornecidos\",\n    \"execucao\",\n    \"tempo\",\n    \"saida\",\n    \"saldo\",\n    \"exemplo\",\n    \"mes\",\n    \"imprimir\",\n    \"mai\",\n    \"cnpq\",\n    \"seletiva\",\n    \"acumulou\",\n    \"conseguiu\",\n    \"tod\",\n    \"escreva\",\n    \"bolsa\",\n    \"cada\",\n    \"tomou\",\n    \"duracao\",\n    \"acumulado\",\n    \"valores\",\n    \"ult\",\n    \"organiz\",\n    \"letr\",\n    \"correspondem\",\n    \"entrada\",\n    \"determin\",\n    \"sido\",\n    \"primeiras\",\n    \"tres\",\n    \"economizando\",\n    \"observ\",\n    \"dev\"\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ad8bcb3ec9b616e555fbfa001a646bb2",
+  "iid": 5926125234552832,
+  "activity_revision": "1.0.1"
+}

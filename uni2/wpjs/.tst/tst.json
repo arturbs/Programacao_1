@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areaPerimetroDeUmCirculo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea e per\u00edmetro de um C\u00edrculo\nimport math\n\ndiametro = int(raw_input())\nraio = diametro / 2.0\narea = math.pi * raio ** 2\nperimetro = 2 * math.pi * raio\nprint (\"A: %.5f\" %area)\nprint (\"P: %.5f\" %perimetro)\n",
+      "name": "areaPerimetroDeUmCirculo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "041a469aec4a95aefcfc6d7aaadce98a",
+  "iid": 5910329485688832,
+  "activity_revision": "1.1.1"
+}

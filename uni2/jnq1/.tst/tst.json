@@ -1,0 +1,14 @@
+{
+  "files": {
+    "consCondominio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nlado1 = float(input())\nlado2 = float(input())\nareaDaCasa = float(input())\n\nquantidade = (lado1 * lado2) / areaDaCasa\n\nprint (\"%d casa(s) pode(m) ser constru\u00edda(s) no terreno.\" %int(quantidade))\n",
+      "name": "consCondominio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "651528731568ec8d2c331c2c6d0a1cd2",
+  "iid": 6570881094516736,
+  "activity_revision": "1.1.0"
+}

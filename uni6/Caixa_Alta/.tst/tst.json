@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_alta = getattr(undertest, 'caixa_alta', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert caixa_alta(\"A primeira letra de cada palavra\") == \"a Primeira Letra De Cada Palavra\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "caixa_alta.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#A Primeira Letra em Caixa Alta\n\ndef caixa_alta(frase):\n\tnova_frase = \"\"\n\tif len(frase) == 0:\n\t\tnova_frase == frase\n\telif len(frase) == 1:\n\t\tnova_frase += frase.lower()\n\telse:\n\t\tif frase[1] != \" \":\n\t\t\tnova_frase += frase[0].upper()\n\t\telse:\n\t\t\tnova_frase += frase[0].lower()\n\t\tfor n in range(len(frase) - 2):\n\t\t\tif frase[n] == \" \":\n\t\t\t\tif frase[n+2] != \" \":\n\t\t\t\t\tnova_frase += frase[n+1].upper()\n\t\t\t\telif frase[n+2] == \" \":\n\t\t\t\t\tnova_frase += frase[n+1].lower()\n\t\t\t\telse:\n\t\t\t\t\tnova_frase += frase[n+1]\n\t\t\telse:\n\t\t\t\tnova_frase += frase[n+1]\n\t\t\n\t\tif frase[len(frase)-2] == \" \":\n\t\t\tnova_frase += frase[len(frase)-1].lower()\n\t\telse:\n\t\t\tnova_frase += frase[len(frase)-1]\n\t\n\tprint nova_frase\n\treturn nova_frase\n\ncaixa_alta(\"A E i ou u\")\n",
+      "name": "caixa_alta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2172b06503ee7c16c11018db58b72bbb",
+  "iid": 4514669729415168,
+  "activity_revision": "1.0.1"
+}

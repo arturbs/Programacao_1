@@ -1,0 +1,14 @@
+{
+  "files": {
+    "notfin.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\npeso1 = float(raw_input())\npeso2 = float(raw_input())\npeso3 = (100 - peso1 - peso2)\nprint \"M\u00e9dia Final: %.1f\" % ((nota1 * peso1 + nota2 * peso2 + nota3 * peso3)/100)\n",
+      "name": "notfin.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f287ba94e0f4000a71b130dc02bc1161",
+  "iid": 5597780689027072,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 66.61,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "ataque.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 - 17/09/2018\n#Ataque Mais Positivo de um Campeonato\n\ntimes = int(raw_input())\ngols = 0\ntime = \"vazio\"\ngols_totais = 0\n\nfor n in range(times):\n\ttime1 = raw_input()\n\tgols1 = int(raw_input())\n\tgols_totais += gols1\n\tif gols1 > gols:\n\t\ttime = time1\n\t\tgols = gols1\n\telif gols1 == gols:\n\t\ttime = time + \"\\n\" + time1\nmedia = float(gols_totais) / times\nprint \"Time(s) com melhor ataque (%d gol(s)):\" %gols\nprint time\nprint \"\\nM\u00e9dia de gols marcados: %.1f\" %media\n",
+      "name": "ataque.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3743b472f05ab92c9528d347777a5dc1",
+  "iid": 4638362371620864,
+  "activity_revision": "1.1.1"
+}

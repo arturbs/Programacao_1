@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda_ordenada.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Agenda Ordenada\n\ndef ordena(nomes, ultimo):\n    for n in range(len(nomes)):\n        for i in range(len(nomes)-1):\n            if nomes[i] > nomes[i+1]:\n                nomes[i], nomes[i+1] = nomes[i+1], nomes[i]\n    for l in nomes:\n        if l == ultimo:\n            print \"* %s\" %l\n        else:\n            print l\n    print \"----\"\n\n\n\nnomes = []\nentrada = \"\"\nwhile entrada != \"####\":\n    entrada = raw_input()\n    if entrada != \"####\":\n        nomes.append(entrada)\n        ordena(nomes, entrada)\n",
+      "name": "agenda_ordenada.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "790a87f2d5f6e3497e9592f4dc5ecd99",
+  "iid": 6471824485384192,
+  "activity_revision": "1.0.0"
+}

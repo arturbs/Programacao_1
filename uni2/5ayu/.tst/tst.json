@@ -1,0 +1,14 @@
+{
+  "files": {
+    "salario_l_b.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# aluno: Artur Brito Souza\n# matricula: 118210056\n# UFCG - Programa\u00e7\u00e3o 1 2018.2\n# 12/09/2018 \n# Programa :  salario liquido e bruto\n\n\"\"\"entrada das variaveis pelo usuario\"\"\"\nnome = raw_input()\nhora_extra = float(raw_input())\nsalario_min = float(raw_input())\nvalor_hora_extra = float(raw_input())\n\n\"\"\"calculos\"\"\"\npagamento_hora_extra = hora_extra * valor_hora_extra\nsalario_bruto = (4 * salario_min) + pagamento_hora_extra\ndesconto_inss = 0.12 * salario_bruto\ndesconto_imposto_renda = 0.2 * salario_bruto\nsalario_liquido = salario_bruto - (desconto_imposto_renda + desconto_inss)\n\n\"\"\"prints das informa\u00e7oes como a quest\u00e3o pede\"\"\"\nprint (\"O Sal\u00e1rio Bruto de %s \u00e9 de R$ %.2f\" %(nome, salario_bruto))\nprint (\"O Sal\u00e1rio L\u00edquido de %s \u00e9 de R$ %.2f\" %(nome, salario_liquido))\n",
+      "name": "salario_l_b.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "af6f4ee659e059e2c1bf3fa75a754a1c",
+  "iid": 5246660267474944,
+  "activity_revision": "1.1.0"
+}

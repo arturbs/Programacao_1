@@ -1,0 +1,14 @@
+{
+  "files": {
+    "acima_da_media.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 \n#Acima da m\u00e9dia (Criminalidade)\n\nmedia_mensal_ssp = float(raw_input())\nlista_de_valores = []\n\nsomatorio = 0\nvalores = \"\"\nvalores = raw_input()\nwhile valores != \"fim\" or 2 * media >= media_mensal_ssp:\n\tlista_de_valores.append(valores.split)\n\tmedia = valores.split()\n\tfor i in range(len(media)):\n\t\tmedia += int(media[i])\n\tvalores = raw_input()\n\t\nprint valores\n\t\t\n",
+      "name": "acima_da_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f1ea9a31b5f1a4b526ddc2d9a106684d",
+  "iid": 5007515750236160,
+  "activity_revision": "1.0.1"
+}

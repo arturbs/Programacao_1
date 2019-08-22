@@ -1,0 +1,14 @@
+{
+  "files": {
+    "apun.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nunidade = raw_input('Unidade? ')\nmedia = raw_input('M\u00e9dia de aprova\u00e7\u00e3o na unidade? ')\n\nproxima_unidade = int(unidade) + 1\nmsg = 'O aluno vai para a unidade %d com m\u00e9dia %.1f.' %(proxima_unidade, float(media))\n\nprint (\"\")\nprint msg \n",
+      "name": "apun.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "53a299f2439a32fcb53cf6f473c08f19",
+  "iid": 5816667019935744,
+  "activity_revision": "1.1.6"
+}

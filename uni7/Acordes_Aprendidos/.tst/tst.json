@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nacordes = getattr(undertest, 'acordes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m1 = ['c', 'd', 'dm']\n        m2 = ['c', 'a']\n        \n        assert acordes(m1, m2) == ['c', 'd', 'dm', 'a']\n        assert m1 == ['c', 'd', 'dm']\n        assert m2 == ['c', 'a']\n        \n        m1 = ['c', 'd']\n        m2 = ['c', 'a']\n        assert acordes(m1, m2) == ['c', 'd', 'a']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "acordes_aprendidos.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Acordes aprendidos\n\ndef acordes(musica_1, musica_2):\n\taprendidos = []\n\tfor i in range(len(musica_1)):\n\t\taprendidos.append(musica_1[i])\n\t\n\tfor n in range(len(musica_2)):\n\t\tcontador = 0\n\t\tfor q in range(len(aprendidos)):\n\t\t\tif musica_2[n] == aprendidos[q]:\n\t\t\t\tcontador += 1\n\t\tif contador == 0:\n\t\t\taprendidos.append(musica_2[n])\n\n\treturn aprendidos\n\n",
+      "name": "acordes_aprendidos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9eb507617f54d1f2af38fee77357bff9",
+  "iid": 5826063200419840,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_proximos = getattr(undertest, 'agrupa_proximos', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n       l = [1,2,3,4,8,22,3,5]\n       assert agrupa_proximos(l,4,2) == [3,4,3,5]\n       assert l == [1,2,3,4,8,22,3,5]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "agrupa_proximos.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Ajeita Lista de N\u00fameros Inteiros\n\ndef  agrupa_proximos(lista, valor, criterio):\n\tproximos = []\n\tfor n in range(len(lista)):\n\t\tif abs(lista[n] - valor) < criterio:\n\t\t\tproximos.append(lista[n])\n\treturn proximos\n",
+      "name": "agrupa_proximos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a888b6a13393988142597f89703d0ccf",
+  "iid": 5868243000492032,
+  "activity_revision": "1.0.2"
+}

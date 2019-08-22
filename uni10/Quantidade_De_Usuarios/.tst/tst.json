@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nquantidade_usuarios = getattr(undertest, 'quantidade_usuarios', None)\n\nclass PublicTests(unittest.TestCase):\n \n    def test_example(self):\n\n        lsd = {1234:['Andrey'], 1226:['Nazareno', 'Livia'], 9999:['administrador'] }\n        deq = {1114:['Ana'] }\n\n        assert quantidade_usuarios(lsd) == 3\n        assert quantidade_usuarios(deq) == 1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "quantidade_de_usuarios.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Quantidade de Usu\u00e1rios\n\ndef quantidade_usuarios(cadastro):\n\tcontador = 0\n\tfor n in cadastro.keys():\n\t\tfor l in cadastro[n]:\n\t\t\tif n != 9999:\n\t\t\t\tcontador += 1\n\treturn contador\n\n\n\n\n",
+      "name": "quantidade_de_usuarios.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "895491a99381b3e78b08740105f07e05",
+  "iid": 5246329387220992,
+  "activity_revision": "1.0.0"
+}

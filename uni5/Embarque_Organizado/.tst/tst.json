@@ -1,0 +1,14 @@
+{
+  "files": {
+    "embarque_organizado.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progama\u00e7\u00e3o 1, 2018.2\n#Embarque Organizado\n\nlista_de_passageiros = []\nlista_par = []\nlista_impar = []\nembarque = raw_input()\nembarque.split()\nlista_de_passageiros.append(embarque.split())\n\n\nfor n in range(len(embarque.split())):\n\n\tif int(lista_de_passageiros[0][n]) % 2 == 1:\n\t\tlista_impar.append(lista_de_passageiros[0][n])\n\telse:\n\t\tlista_par.append(lista_de_passageiros[0][n])\n\nlista_final = lista_impar + lista_par\n\n\nif lista_final == embarque.split():\n\tprint \"ok\"\nelse:\n\tprint \"erro\"\n\n\n\n\n\t\t \n",
+      "name": "embarque_organizado.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cfa6af831ca79b622f21f8889e61995e",
+  "iid": 6343369361981440,
+  "activity_revision": "1.0.1"
+}

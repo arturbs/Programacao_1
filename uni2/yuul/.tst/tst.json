@@ -1,0 +1,14 @@
+{
+  "files": {
+    "caixaMorangos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nmorangos = int(input())\n\ncaixas = morangos / 400\ndesperdicio = morangos % 400\nporcentagem = (float(desperdicio) / morangos) * 100\n\nprint(\"Ser\u00e3o necess\u00e1rias %d caixa(s) para embalar os morangos.\" %caixas)\nprint(\"%.1f%% dos morangos ser\u00e3o perdidos.\" %porcentagem)\n\n",
+      "name": "caixaMorangos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e1f32b8cb9947c9828a049374dec91a0",
+  "iid": 4565613645135872,
+  "activity_revision": "1.0.0"
+}

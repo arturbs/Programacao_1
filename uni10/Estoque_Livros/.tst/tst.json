@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nausentes = getattr(undertest, 'ausentes', None)\n\nclass PublicTests(unittest.TestCase):\n    def test_exemplo(self):\n        livros = { \"Metamorfose\": 30, \"O Principe\": 0, \"Vigiar e Punir\": 0, \"Dumbo\": 22}\n        assert ausentes(livros) == 2\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "estoque_livros.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Livros Estoque\n\ndef ausentes(estoque):\n\tausentes = 0\n\tquantidades = estoque.values()\n\tfor n in range(len(quantidades)):\n\t\tif quantidades[n] == 0:\n\t\t\tausentes += 1\n\treturn ausentes\n\nlivros = { \"Metamorfose\": 30, \"O Principe\": 0, \"Vigiar e Punir\": 0, \"Dumbo\": 22}\nprint ausentes(livros)\n",
+      "name": "estoque_livros.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a3a1024a8e489538e7ca8e60d291d38b",
+  "iid": 5842480121511936,
+  "activity_revision": "1.0.0"
+}

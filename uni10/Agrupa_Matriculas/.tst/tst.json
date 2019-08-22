@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_por_periodo = getattr(undertest, 'agrupa_por_periodo', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        turma = [\n            '0511114', '0521137', '0611001',\n            '0611003', '0611004', '0621006',\n            '0811007', '0811009', '0811502',\n            '0811604', '0811605',\n        ]\n        assert agrupa_por_periodo(turma) == {\n            '051': 1,\n            '052': 1,\n            '061': 3,\n            '062': 1,\n            '081': 5,\n        }\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "Agrupa_Matr\u00edculas.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n#Artur Brito Souza - 118210056\n#Laboratorio de Progamacao 1, 2018.2\n#Agrupa M\u00faltiplos\n\ndef agrupa_por_periodo(alunos):\n    periodo = {}\n    aux = []\n    aux2 = []\n    cont = 0\n    aux.append(str(alunos[0][0:3]))\n\n    for n in range(len(alunos)):\n        for i in aux:\n            if alunos[n][0:3] == i:\n                cont += 1\n        if cont == 0:\n            aux.append(str(alunos[n][0:3]))\n        cont = 0\n\n    for k in aux:\n        for j in range(len(alunos)):\n            if alunos[j][0:3] == k:\n                cont+=1\n        aux2.append(cont)\n        cont = 0\n\n    for l in range(len(aux)):\n        periodo.update({aux[l] : aux2[l]})\n    return periodo",
+      "name": "Agrupa_Matr\u00edculas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "43a1d48938b6b65e8789a478253a5861",
+  "iid": 6429714478530560,
+  "activity_revision": "1.0.0"
+}

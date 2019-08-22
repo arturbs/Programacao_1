@@ -1,0 +1,14 @@
+{
+  "files": {
+    "numeroDeDias.py": {
+      "category": "answer",
+      "data": "segundos = float(input())\n\ndias = segundos / 86400\n\nprint (\"%d\" %int(dias)) \n",
+      "name": "numeroDeDias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "343918fda1d51ff7f768ebaa0ac820ba",
+  "iid": 5461670558171136,
+  "activity_revision": "1.1.0"
+}

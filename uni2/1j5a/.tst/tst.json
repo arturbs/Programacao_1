@@ -1,0 +1,14 @@
+{
+  "files": {
+    "precoDaVenda.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\ncEntrada = float(input())\npDespesas = float(input())\npLucro = float(input())\npImposto = float(input())\npComissao = float(input())\npDesconto = float(input())\npEncargo = float(input())\n\nvalor_final1 = ((cEntrada + ((cEntrada / 100) * pDespesas) + ((cEntrada / 100) * pLucro)) * 100) \nvalor_final2 = (100 - pImposto - pComissao - pDesconto - pEncargo)\nvalor_final3 = valor_final1 / valor_final2 \nreal = int(valor_final3)\nmoeda = valor_final3 - int(valor_final3)\n\nprint (\"Pre\u00e7o de venda \u00e9 R$ %.2f (R$ %.2f + R$ %.2f)\" %(valor_final3, float(real), moeda))\n",
+      "name": "precoDaVenda.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5d091a57c46f8f78f762a09c1f38c400",
+  "iid": 6754754415820800,
+  "activity_revision": "1.1.0"
+}

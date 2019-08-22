@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_votos = getattr(undertest, 'conta_votos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,543,joao,PPPP,sim')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,543,joao,PPPP,sim')\n        votacao.append('uma,543,marina,PPPP,nao')\n        votacao.append('uma,5,joao,PPPP,sim')\n        votacao.append('uma,543,julio,P,nao')\n        votacao.append('uma,543,carlos,PBBBB,sim')\n        votacao.append('uma,543,juliana,PP,sim')\n        votacao.append('uma,99,joao,PPPP,sim')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "analytics_votacao.py": {
+      "category": "answer",
+      "data": "#coding: utf -8\n#Artur Brito Souza - 118210056\n#Programa\u00e7\u00e3o 1 - 2018.2\n#Analytics Vota\u00e7\u00e3o\n\ndef conta_votos(votacoes,id_votacao):\n\tcontador_sim = 0\n\tcontador_nao = 0 \n\tfor n in range(len(votacoes)):\n\t\tvoto = votacoes[n].split(\",\")\n\t\tif int(voto[1]) == id_votacao:\n\t\t\tif voto[4] == \"sim\":\n\t\t\t\tcontador_sim += 1\n\t\t\telse:\n\t\t\t\tcontador_nao += 1\n\tresultado = [contador_sim,contador_nao]\n\treturn resultado\n\t\t\n",
+      "name": "analytics_votacao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6aa03b46442647946596c3ed6a475e85",
+  "iid": 6449048441585664,
+  "activity_revision": "2.0.1"
+}

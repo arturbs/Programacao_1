@@ -1,0 +1,14 @@
+{
+  "files": {
+    "convmed.py": {
+      "category": "answer",
+      "data": "milhas = float(raw_input())\nlibras = float(raw_input())\ngaloes = float(raw_input())\n\nkg = libras * 0.453592\nkm = milhas * 1.60934\nlitro = galoes * 3.78541\n\nprint str(km) + \" \" + str(kg) + \" \" + str(litro)\n\n",
+      "name": "convmed.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a4f722e3d0def6bda5c36b76c5401f8c",
+  "iid": 6346257794596864,
+  "activity_revision": "1.0.0"
+}
